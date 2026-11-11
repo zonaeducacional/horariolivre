@@ -69,7 +69,7 @@ npm run dist:linux -- --publish never
 npm run dist:win -- --publish never
 ```
 
-Saídas em `artifacts/packages`, preservando o diretório `release` e os AppImages anteriores. O empacotamento Windows gera instalador NSIS e executável portátil. No Linux, o electron-builder baixa o Wine 11 pelo conjunto de ferramentas 1.0.1 para criar o instalador. O aplicativo Windows deve ser validado no sistema de destino. Não há publicação automática configurada.
+Saídas em `artifacts/packages`, preservando o diretório `release` e os AppImages anteriores. O empacotamento Windows gera instalador NSIS e executável portátil. Para gerar somente o portátil no Linux, use `npm run dist:win -- --win portable --x64 --publish never`. O instalador NSIS exige Windows ou um Wine funcional no Linux. O aplicativo Windows deve ser validado no sistema de destino. Não há publicação automática configurada.
 
 O Electron usa sandbox, isolamento de contexto, Node desabilitado no renderer, CSP de produção, conteúdo local e IPC restrito ao frame principal autorizado. O modo de desenvolvimento autoriza apenas servidor HTTP de loopback na porta 5173.
 

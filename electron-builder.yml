@@ -19,7 +19,3 @@ win:
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
-
-# Wine distribuído pelo electron-builder para empacotar Windows também no Linux.
-toolsets:
-  wine: 1.0.1
