@@ -1,0 +1,25 @@
+appId: org.vibelab.horario
+productName: Vibe Lab Horário
+directories:
+  output: artifacts/packages
+  buildResources: build
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Education
+win:
+  target:
+    - nsis
+    - portable
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+
+# Wine distribuído pelo electron-builder para empacotar Windows também no Linux.
+toolsets:
+  wine: 1.0.1

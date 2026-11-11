@@ -1,0 +1,17 @@
+[
+  {
+    "size": "pequena",
+    "wallMs": 287.88475800000015,
+    "aulas": 125
+  },
+  {
+    "size": "media",
+    "wallMs": 2871.190294,
+    "aulas": 300
+  },
+  {
+    "size": "grande",
+    "wallMs": 5437.0617569999995,
+    "aulas": 600
+  }
+]

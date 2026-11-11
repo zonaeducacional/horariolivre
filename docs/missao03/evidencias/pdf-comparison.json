@@ -1,0 +1,20 @@
+[
+  {
+    "size": "pequena",
+    "pages": 2,
+    "fieldsCompared": 250,
+    "passed": true
+  },
+  {
+    "size": "media",
+    "pages": 2,
+    "fieldsCompared": 600,
+    "passed": true
+  },
+  {
+    "size": "grande",
+    "pages": 2,
+    "fieldsCompared": 1200,
+    "passed": true
+  }
+]

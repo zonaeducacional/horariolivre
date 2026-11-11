@@ -1,0 +1,65 @@
+[
+  {
+    "size": "pequena",
+    "width": 800,
+    "height": 600,
+    "noticeHeight": 158,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "pequena",
+    "width": 1280,
+    "height": 840,
+    "noticeHeight": 201.1875,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "pequena",
+    "width": 1920,
+    "height": 1080,
+    "noticeHeight": 244.390625,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "media",
+    "width": 800,
+    "height": 600,
+    "noticeHeight": 158,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "media",
+    "width": 1280,
+    "height": 840,
+    "noticeHeight": 201.1875,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "media",
+    "width": 1920,
+    "height": 1080,
+    "noticeHeight": 244.390625,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "grande",
+    "width": 800,
+    "height": 600,
+    "noticeHeight": 158,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "grande",
+    "width": 1280,
+    "height": 840,
+    "noticeHeight": 201.1875,
+    "navigation": "accessible without dismissing warnings"
+  },
+  {
+    "size": "grande",
+    "width": 1920,
+    "height": 1080,
+    "noticeHeight": 244.390625,
+    "navigation": "accessible without dismissing warnings"
+  }
+]

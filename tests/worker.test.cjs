@@ -1,0 +1,6 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const {project}=require('./fixtures.cjs');const {SolverRunner}=require('../dist-electron/main/solverRunner.js');
+test('worker retorna solução validada e libera execução',async()=>{const r=new SolverRunner();const result=await r.run(project());assert.equal(result.status,'sucesso');assert.equal(r.running,false);});
+test('cancelamento encerra worker sem substituir grade',async()=>{const runner=new SolverRunner();const p=project();const original=JSON.stringify(p);const result=runner.run(p);await runner.cancel();assert.equal((await result).status,'cancelado');assert.equal(runner.running,false);assert.equal(JSON.stringify(p),original);assert.equal((await runner.run(project(1))).sucesso,true);});
+test('impede workers duplicados',async()=>{const runner=new SolverRunner();const pending=runner.run(project());assert.throws(()=>runner.run(project()),/execução/);await runner.cancel();await pending;});
+test('worker informa limite sem alegar inviabilidade',async()=>{const r=await new SolverRunner().run(project(),undefined,{maxIterations:0});assert.equal(r.status,'limite');});
+test('cálculo é isolado de alterações posteriores no objeto',async()=>{const runner=new SolverRunner();const p=project(1);const pending=runner.run(p);p.professores=[];assert.equal((await pending).sucesso,true);});

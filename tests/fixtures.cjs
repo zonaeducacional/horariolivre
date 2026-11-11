@@ -1,0 +1,4 @@
+exports.project = function project(count = 3) {
+ return {versao:'1.0.0',nomeEscola:'Teste sintético',anoLetivo:2026,diasLetivos:[1,2,3,4,5],turnos:[{id:'t',nome:'Manhã',horaInicio:'07:00',duracaoAulaMinutos:50,temposCount:5,intervaloAposTempo:3,duracaoIntervaloMinutos:20}],turmas:[{id:'c',nome:'Turma',sigla:'T',turnoId:'t'}],professores:[{id:'p',nome:'Docente',sigla:'P',limiteAulasDia:10,evitarJanelas:true}],disciplinas:[{id:'d',nome:'Disciplina',sigla:'D',corHex:'#2563eb'}],disponibilidades:[],matrizCurricular:[{id:'m',turmaId:'c',disciplinaId:'d',professorId:'p',aulasSemanais:count,permiteGeminada:false,maximoAulasDia:1}],gradeHorario:[],ultimaModificacao:'2026-01-01T00:00:00.000Z'};
+};
+exports.lesson = (extra={}) => ({id:'a',matrizItemId:'m',turmaId:'c',disciplinaId:'d',professorId:'p',diaSemana:1,tempoNumero:1,fixaManual:false,...extra});

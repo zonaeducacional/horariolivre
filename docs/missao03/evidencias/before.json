@@ -1,0 +1,327 @@
+[
+  {
+    "variant": "before",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 411.597281,
+    "cpuMs": 544.842,
+    "maxRssMiB": 71.5390625,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 336,
+      "domains": 9218,
+      "backtracks": 250,
+      "prunes": 134,
+      "candidateSlots": 208412,
+      "accepted": 168895
+    }
+  },
+  {
+    "variant": "before",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 30001.587489999998,
+    "cpuMs": 30376.076,
+    "maxRssMiB": 97.17578125,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 4981,
+      "domains": 583879,
+      "backtracks": 4980,
+      "prunes": 1771,
+      "candidateSlots": 13228066,
+      "accepted": 10596354
+    }
+  },
+  {
+    "variant": "before",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 30007.296866,
+    "cpuMs": 30344.535,
+    "maxRssMiB": 96.3359375,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 2278,
+      "domains": 451495,
+      "backtracks": 2277,
+      "prunes": 981,
+      "candidateSlots": 10218967,
+      "accepted": 8161969
+    }
+  },
+  {
+    "variant": "before",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 480.34585599999997,
+    "cpuMs": 614.531,
+    "maxRssMiB": 66.21875,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 336,
+      "domains": 9218,
+      "backtracks": 250,
+      "prunes": 134,
+      "candidateSlots": 208412,
+      "accepted": 168895
+    }
+  },
+  {
+    "variant": "before",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 30003.099690000003,
+    "cpuMs": 30403.429,
+    "maxRssMiB": 102.98828125,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 4639,
+      "domains": 544079,
+      "backtracks": 4638,
+      "prunes": 1648,
+      "candidateSlots": 12326416,
+      "accepted": 9874526
+    }
+  },
+  {
+    "variant": "before",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 30018.348494,
+    "cpuMs": 30375.897,
+    "maxRssMiB": 103.5,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 2294,
+      "domains": 454782,
+      "backtracks": 2293,
+      "prunes": 987,
+      "candidateSlots": 10293397,
+      "accepted": 8221328
+    }
+  },
+  {
+    "variant": "before",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 474.53131199999996,
+    "cpuMs": 604.129,
+    "maxRssMiB": 65.87109375,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 336,
+      "domains": 9218,
+      "backtracks": 250,
+      "prunes": 134,
+      "candidateSlots": 208412,
+      "accepted": 168895
+    }
+  },
+  {
+    "variant": "before",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 30005.844346,
+    "cpuMs": 30363.485,
+    "maxRssMiB": 99.265625,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 4324,
+      "domains": 507288,
+      "backtracks": 4323,
+      "prunes": 1536,
+      "candidateSlots": 11492941,
+      "accepted": 9207033
+    }
+  },
+  {
+    "variant": "before",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 30011.622815,
+    "cpuMs": 30340.754,
+    "maxRssMiB": 103.1796875,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 2290,
+      "domains": 453810,
+      "backtracks": 2289,
+      "prunes": 986,
+      "candidateSlots": 10271392,
+      "accepted": 8203734
+    }
+  },
+  {
+    "variant": "before",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 483.156231,
+    "cpuMs": 623.294,
+    "maxRssMiB": 67.66015625,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 336,
+      "domains": 9218,
+      "backtracks": 250,
+      "prunes": 134,
+      "candidateSlots": 208412,
+      "accepted": 168895
+    }
+  },
+  {
+    "variant": "before",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 30003.036691,
+    "cpuMs": 30396.524,
+    "maxRssMiB": 101.8046875,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 4759,
+      "domains": 558170,
+      "backtracks": 4758,
+      "prunes": 1690,
+      "candidateSlots": 12645646,
+      "accepted": 10130229
+    }
+  },
+  {
+    "variant": "before",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 30003.539157000003,
+    "cpuMs": 30411.183,
+    "maxRssMiB": 103.1796875,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 2312,
+      "domains": 458412,
+      "backtracks": 2311,
+      "prunes": 994,
+      "candidateSlots": 10375592,
+      "accepted": 8286798
+    }
+  },
+  {
+    "variant": "before",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 475.143068,
+    "cpuMs": 615.54,
+    "maxRssMiB": 71.4921875,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 336,
+      "domains": 9218,
+      "backtracks": 250,
+      "prunes": 134,
+      "candidateSlots": 208412,
+      "accepted": 168895
+    }
+  },
+  {
+    "variant": "before",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 30003.970996,
+    "cpuMs": 30402.772,
+    "maxRssMiB": 97.76953125,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 4786,
+      "domains": 561284,
+      "backtracks": 4785,
+      "prunes": 1700,
+      "candidateSlots": 12716156,
+      "accepted": 10186635
+    }
+  },
+  {
+    "variant": "before",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 30002.598465,
+    "cpuMs": 30362.337,
+    "maxRssMiB": 101.921875,
+    "status": "limite",
+    "aulas": 0,
+    "oracle": null,
+    "diagnostics": {
+      "nodes": 2283,
+      "domains": 452484,
+      "backtracks": 2282,
+      "prunes": 983,
+      "candidateSlots": 10241362,
+      "accepted": 8179825
+    }
+  }
+]

@@ -1,0 +1,1915 @@
+{
+  "versao": "1.1.0",
+  "nomeEscola": "Escola Fictícia Horizonte Media",
+  "anoLetivo": 2026,
+  "diasLetivos": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "turnos": [
+    {
+      "id": "manha",
+      "nome": "Matutino",
+      "horaInicio": "07:30",
+      "duracaoAulaMinutos": 50,
+      "temposCount": 5,
+      "intervaloAposTempo": 2,
+      "duracaoIntervaloMinutos": 20
+    },
+    {
+      "id": "tarde",
+      "nome": "Vespertino",
+      "horaInicio": "13:00",
+      "duracaoAulaMinutos": 50,
+      "temposCount": 5,
+      "intervaloAposTempo": 2,
+      "duracaoIntervaloMinutos": 20
+    }
+  ],
+  "turmas": [
+    {
+      "id": "turma-1",
+      "nome": "6º Ano A",
+      "sigla": "T1",
+      "turnoId": "manha",
+      "salaPadrao": "Sala 1"
+    },
+    {
+      "id": "turma-2",
+      "nome": "7º Ano A",
+      "sigla": "T2",
+      "turnoId": "manha",
+      "salaPadrao": "Sala 2"
+    },
+    {
+      "id": "turma-3",
+      "nome": "8º Ano A",
+      "sigla": "T3",
+      "turnoId": "manha",
+      "salaPadrao": "Sala 3"
+    },
+    {
+      "id": "turma-4",
+      "nome": "9º Ano A",
+      "sigla": "T4",
+      "turnoId": "manha",
+      "salaPadrao": "Sala 4"
+    },
+    {
+      "id": "turma-5",
+      "nome": "6º Ano B",
+      "sigla": "T5",
+      "turnoId": "manha",
+      "salaPadrao": "Sala 5"
+    },
+    {
+      "id": "turma-6",
+      "nome": "7º Ano B",
+      "sigla": "T6",
+      "turnoId": "manha",
+      "salaPadrao": "Sala 6"
+    },
+    {
+      "id": "turma-7",
+      "nome": "8º Ano B",
+      "sigla": "T7",
+      "turnoId": "tarde",
+      "salaPadrao": "Sala 1"
+    },
+    {
+      "id": "turma-8",
+      "nome": "9º Ano B",
+      "sigla": "T8",
+      "turnoId": "tarde",
+      "salaPadrao": "Sala 2"
+    },
+    {
+      "id": "turma-9",
+      "nome": "6º Ano C",
+      "sigla": "T9",
+      "turnoId": "tarde",
+      "salaPadrao": "Sala 3"
+    },
+    {
+      "id": "turma-10",
+      "nome": "7º Ano C",
+      "sigla": "T10",
+      "turnoId": "tarde",
+      "salaPadrao": "Sala 4"
+    },
+    {
+      "id": "turma-11",
+      "nome": "8º Ano C",
+      "sigla": "T11",
+      "turnoId": "tarde",
+      "salaPadrao": "Sala 5"
+    },
+    {
+      "id": "turma-12",
+      "nome": "9º Ano C",
+      "sigla": "T12",
+      "turnoId": "tarde",
+      "salaPadrao": "Sala 6"
+    }
+  ],
+  "professores": [
+    {
+      "id": "doc-1",
+      "nome": "Docente Fictício 01 (por)",
+      "sigla": "D01",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-2",
+      "nome": "Docente Fictício 02 (por)",
+      "sigla": "D02",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-3",
+      "nome": "Docente Fictício 03 (por)",
+      "sigla": "D03",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-4",
+      "nome": "Docente Fictício 04 (por)",
+      "sigla": "D04",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-5",
+      "nome": "Docente Fictício 05 (mat)",
+      "sigla": "D05",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-6",
+      "nome": "Docente Fictício 06 (mat)",
+      "sigla": "D06",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-7",
+      "nome": "Docente Fictício 07 (mat)",
+      "sigla": "D07",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-8",
+      "nome": "Docente Fictício 08 (mat)",
+      "sigla": "D08",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-9",
+      "nome": "Docente Fictício 09 (mat)",
+      "sigla": "D09",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-10",
+      "nome": "Docente Fictício 10 (cie)",
+      "sigla": "D10",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-11",
+      "nome": "Docente Fictício 11 (cie)",
+      "sigla": "D11",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-12",
+      "nome": "Docente Fictício 12 (cie)",
+      "sigla": "D12",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-13",
+      "nome": "Docente Fictício 13 (his)",
+      "sigla": "D13",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-14",
+      "nome": "Docente Fictício 14 (his)",
+      "sigla": "D14",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-15",
+      "nome": "Docente Fictício 15 (his)",
+      "sigla": "D15",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-16",
+      "nome": "Docente Fictício 16 (geo)",
+      "sigla": "D16",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-17",
+      "nome": "Docente Fictício 17 (geo)",
+      "sigla": "D17",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-18",
+      "nome": "Docente Fictício 18 (geo)",
+      "sigla": "D18",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-19",
+      "nome": "Docente Fictício 19 (ing)",
+      "sigla": "D19",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-20",
+      "nome": "Docente Fictício 20 (ing)",
+      "sigla": "D20",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-21",
+      "nome": "Docente Fictício 21 (art)",
+      "sigla": "D21",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-22",
+      "nome": "Docente Fictício 22 (art)",
+      "sigla": "D22",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    },
+    {
+      "id": "doc-23",
+      "nome": "Docente Fictício 23 (art)",
+      "sigla": "D23",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-24",
+      "nome": "Docente Fictício 24 (edf)",
+      "sigla": "D24",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "doc-25",
+      "nome": "Docente Fictício 25 (edf)",
+      "sigla": "D25",
+      "limiteAulasDia": 5,
+      "evitarJanelas": false
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": "por",
+      "nome": "Língua Portuguesa",
+      "sigla": "POR",
+      "corHex": "#2563eb"
+    },
+    {
+      "id": "mat",
+      "nome": "Matemática",
+      "sigla": "MAT",
+      "corHex": "#db2777"
+    },
+    {
+      "id": "cie",
+      "nome": "Ciências",
+      "sigla": "CIE",
+      "corHex": "#059669"
+    },
+    {
+      "id": "his",
+      "nome": "História",
+      "sigla": "HIS",
+      "corHex": "#d97706"
+    },
+    {
+      "id": "geo",
+      "nome": "Geografia",
+      "sigla": "GEO",
+      "corHex": "#7c3aed"
+    },
+    {
+      "id": "ing",
+      "nome": "Língua Inglesa",
+      "sigla": "ING",
+      "corHex": "#0891b2"
+    },
+    {
+      "id": "art",
+      "nome": "Arte",
+      "sigla": "ART",
+      "corHex": "#92400e"
+    },
+    {
+      "id": "edf",
+      "nome": "Educação Física",
+      "sigla": "EDF",
+      "corHex": "#374151"
+    }
+  ],
+  "matrizCurricular": [
+    {
+      "id": "m-1-por",
+      "turmaId": "turma-1",
+      "disciplinaId": "por",
+      "professorId": "doc-1",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-1-mat",
+      "turmaId": "turma-1",
+      "disciplinaId": "mat",
+      "professorId": "doc-5",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-1-cie",
+      "turmaId": "turma-1",
+      "disciplinaId": "cie",
+      "professorId": "doc-10",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-1-his",
+      "turmaId": "turma-1",
+      "disciplinaId": "his",
+      "professorId": "doc-13",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-1-geo",
+      "turmaId": "turma-1",
+      "disciplinaId": "geo",
+      "professorId": "doc-16",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-1-ing",
+      "turmaId": "turma-1",
+      "disciplinaId": "ing",
+      "professorId": "doc-19",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-1-art",
+      "turmaId": "turma-1",
+      "disciplinaId": "art",
+      "professorId": "doc-21",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-1-edf",
+      "turmaId": "turma-1",
+      "disciplinaId": "edf",
+      "professorId": "doc-24",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-2-por",
+      "turmaId": "turma-2",
+      "disciplinaId": "por",
+      "professorId": "doc-2",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-2-mat",
+      "turmaId": "turma-2",
+      "disciplinaId": "mat",
+      "professorId": "doc-9",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-2-cie",
+      "turmaId": "turma-2",
+      "disciplinaId": "cie",
+      "professorId": "doc-11",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-2-his",
+      "turmaId": "turma-2",
+      "disciplinaId": "his",
+      "professorId": "doc-13",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-2-geo",
+      "turmaId": "turma-2",
+      "disciplinaId": "geo",
+      "professorId": "doc-16",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-2-ing",
+      "turmaId": "turma-2",
+      "disciplinaId": "ing",
+      "professorId": "doc-19",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-2-art",
+      "turmaId": "turma-2",
+      "disciplinaId": "art",
+      "professorId": "doc-22",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-2-edf",
+      "turmaId": "turma-2",
+      "disciplinaId": "edf",
+      "professorId": "doc-24",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-3-por",
+      "turmaId": "turma-3",
+      "disciplinaId": "por",
+      "professorId": "doc-1",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-3-mat",
+      "turmaId": "turma-3",
+      "disciplinaId": "mat",
+      "professorId": "doc-5",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-3-cie",
+      "turmaId": "turma-3",
+      "disciplinaId": "cie",
+      "professorId": "doc-12",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-3-his",
+      "turmaId": "turma-3",
+      "disciplinaId": "his",
+      "professorId": "doc-14",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-3-geo",
+      "turmaId": "turma-3",
+      "disciplinaId": "geo",
+      "professorId": "doc-17",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-3-ing",
+      "turmaId": "turma-3",
+      "disciplinaId": "ing",
+      "professorId": "doc-20",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-3-art",
+      "turmaId": "turma-3",
+      "disciplinaId": "art",
+      "professorId": "doc-21",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-3-edf",
+      "turmaId": "turma-3",
+      "disciplinaId": "edf",
+      "professorId": "doc-25",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-4-por",
+      "turmaId": "turma-4",
+      "disciplinaId": "por",
+      "professorId": "doc-2",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-4-mat",
+      "turmaId": "turma-4",
+      "disciplinaId": "mat",
+      "professorId": "doc-6",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-4-cie",
+      "turmaId": "turma-4",
+      "disciplinaId": "cie",
+      "professorId": "doc-10",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-4-his",
+      "turmaId": "turma-4",
+      "disciplinaId": "his",
+      "professorId": "doc-14",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-4-geo",
+      "turmaId": "turma-4",
+      "disciplinaId": "geo",
+      "professorId": "doc-17",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-4-ing",
+      "turmaId": "turma-4",
+      "disciplinaId": "ing",
+      "professorId": "doc-19",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-4-art",
+      "turmaId": "turma-4",
+      "disciplinaId": "art",
+      "professorId": "doc-23",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-4-edf",
+      "turmaId": "turma-4",
+      "disciplinaId": "edf",
+      "professorId": "doc-24",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-5-por",
+      "turmaId": "turma-5",
+      "disciplinaId": "por",
+      "professorId": "doc-4",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-5-mat",
+      "turmaId": "turma-5",
+      "disciplinaId": "mat",
+      "professorId": "doc-7",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-5-cie",
+      "turmaId": "turma-5",
+      "disciplinaId": "cie",
+      "professorId": "doc-11",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-5-his",
+      "turmaId": "turma-5",
+      "disciplinaId": "his",
+      "professorId": "doc-15",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-5-geo",
+      "turmaId": "turma-5",
+      "disciplinaId": "geo",
+      "professorId": "doc-18",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-5-ing",
+      "turmaId": "turma-5",
+      "disciplinaId": "ing",
+      "professorId": "doc-20",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-5-art",
+      "turmaId": "turma-5",
+      "disciplinaId": "art",
+      "professorId": "doc-22",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-5-edf",
+      "turmaId": "turma-5",
+      "disciplinaId": "edf",
+      "professorId": "doc-25",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-6-por",
+      "turmaId": "turma-6",
+      "disciplinaId": "por",
+      "professorId": "doc-3",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-6-mat",
+      "turmaId": "turma-6",
+      "disciplinaId": "mat",
+      "professorId": "doc-6",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-6-cie",
+      "turmaId": "turma-6",
+      "disciplinaId": "cie",
+      "professorId": "doc-11",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-6-his",
+      "turmaId": "turma-6",
+      "disciplinaId": "his",
+      "professorId": "doc-15",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-6-geo",
+      "turmaId": "turma-6",
+      "disciplinaId": "geo",
+      "professorId": "doc-18",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-6-ing",
+      "turmaId": "turma-6",
+      "disciplinaId": "ing",
+      "professorId": "doc-20",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-6-art",
+      "turmaId": "turma-6",
+      "disciplinaId": "art",
+      "professorId": "doc-23",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-6-edf",
+      "turmaId": "turma-6",
+      "disciplinaId": "edf",
+      "professorId": "doc-25",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-7-por",
+      "turmaId": "turma-7",
+      "disciplinaId": "por",
+      "professorId": "doc-3",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-7-mat",
+      "turmaId": "turma-7",
+      "disciplinaId": "mat",
+      "professorId": "doc-7",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-7-cie",
+      "turmaId": "turma-7",
+      "disciplinaId": "cie",
+      "professorId": "doc-12",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-7-his",
+      "turmaId": "turma-7",
+      "disciplinaId": "his",
+      "professorId": "doc-13",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-7-geo",
+      "turmaId": "turma-7",
+      "disciplinaId": "geo",
+      "professorId": "doc-16",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-7-ing",
+      "turmaId": "turma-7",
+      "disciplinaId": "ing",
+      "professorId": "doc-19",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-7-art",
+      "turmaId": "turma-7",
+      "disciplinaId": "art",
+      "professorId": "doc-21",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-7-edf",
+      "turmaId": "turma-7",
+      "disciplinaId": "edf",
+      "professorId": "doc-24",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-8-por",
+      "turmaId": "turma-8",
+      "disciplinaId": "por",
+      "professorId": "doc-4",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-8-mat",
+      "turmaId": "turma-8",
+      "disciplinaId": "mat",
+      "professorId": "doc-8",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-8-cie",
+      "turmaId": "turma-8",
+      "disciplinaId": "cie",
+      "professorId": "doc-12",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-8-his",
+      "turmaId": "turma-8",
+      "disciplinaId": "his",
+      "professorId": "doc-13",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-8-geo",
+      "turmaId": "turma-8",
+      "disciplinaId": "geo",
+      "professorId": "doc-16",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-8-ing",
+      "turmaId": "turma-8",
+      "disciplinaId": "ing",
+      "professorId": "doc-19",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-8-art",
+      "turmaId": "turma-8",
+      "disciplinaId": "art",
+      "professorId": "doc-22",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-8-edf",
+      "turmaId": "turma-8",
+      "disciplinaId": "edf",
+      "professorId": "doc-24",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-9-por",
+      "turmaId": "turma-9",
+      "disciplinaId": "por",
+      "professorId": "doc-3",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-9-mat",
+      "turmaId": "turma-9",
+      "disciplinaId": "mat",
+      "professorId": "doc-9",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-9-cie",
+      "turmaId": "turma-9",
+      "disciplinaId": "cie",
+      "professorId": "doc-10",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-9-his",
+      "turmaId": "turma-9",
+      "disciplinaId": "his",
+      "professorId": "doc-14",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-9-geo",
+      "turmaId": "turma-9",
+      "disciplinaId": "geo",
+      "professorId": "doc-17",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-9-ing",
+      "turmaId": "turma-9",
+      "disciplinaId": "ing",
+      "professorId": "doc-20",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-9-art",
+      "turmaId": "turma-9",
+      "disciplinaId": "art",
+      "professorId": "doc-21",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-9-edf",
+      "turmaId": "turma-9",
+      "disciplinaId": "edf",
+      "professorId": "doc-25",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-10-por",
+      "turmaId": "turma-10",
+      "disciplinaId": "por",
+      "professorId": "doc-1",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-10-mat",
+      "turmaId": "turma-10",
+      "disciplinaId": "mat",
+      "professorId": "doc-5",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-10-cie",
+      "turmaId": "turma-10",
+      "disciplinaId": "cie",
+      "professorId": "doc-11",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-10-his",
+      "turmaId": "turma-10",
+      "disciplinaId": "his",
+      "professorId": "doc-14",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-10-geo",
+      "turmaId": "turma-10",
+      "disciplinaId": "geo",
+      "professorId": "doc-17",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-10-ing",
+      "turmaId": "turma-10",
+      "disciplinaId": "ing",
+      "professorId": "doc-19",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-10-art",
+      "turmaId": "turma-10",
+      "disciplinaId": "art",
+      "professorId": "doc-23",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-10-edf",
+      "turmaId": "turma-10",
+      "disciplinaId": "edf",
+      "professorId": "doc-24",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-11-por",
+      "turmaId": "turma-11",
+      "disciplinaId": "por",
+      "professorId": "doc-2",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-11-mat",
+      "turmaId": "turma-11",
+      "disciplinaId": "mat",
+      "professorId": "doc-7",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-11-cie",
+      "turmaId": "turma-11",
+      "disciplinaId": "cie",
+      "professorId": "doc-12",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-11-his",
+      "turmaId": "turma-11",
+      "disciplinaId": "his",
+      "professorId": "doc-15",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-11-geo",
+      "turmaId": "turma-11",
+      "disciplinaId": "geo",
+      "professorId": "doc-18",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-11-ing",
+      "turmaId": "turma-11",
+      "disciplinaId": "ing",
+      "professorId": "doc-20",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-11-art",
+      "turmaId": "turma-11",
+      "disciplinaId": "art",
+      "professorId": "doc-22",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-11-edf",
+      "turmaId": "turma-11",
+      "disciplinaId": "edf",
+      "professorId": "doc-25",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-12-por",
+      "turmaId": "turma-12",
+      "disciplinaId": "por",
+      "professorId": "doc-1",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-12-mat",
+      "turmaId": "turma-12",
+      "disciplinaId": "mat",
+      "professorId": "doc-8",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-12-cie",
+      "turmaId": "turma-12",
+      "disciplinaId": "cie",
+      "professorId": "doc-10",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-12-his",
+      "turmaId": "turma-12",
+      "disciplinaId": "his",
+      "professorId": "doc-15",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-12-geo",
+      "turmaId": "turma-12",
+      "disciplinaId": "geo",
+      "professorId": "doc-18",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "m-12-ing",
+      "turmaId": "turma-12",
+      "disciplinaId": "ing",
+      "professorId": "doc-20",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-12-art",
+      "turmaId": "turma-12",
+      "disciplinaId": "art",
+      "professorId": "doc-23",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "m-12-edf",
+      "turmaId": "turma-12",
+      "disciplinaId": "edf",
+      "professorId": "doc-25",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    }
+  ],
+  "disponibilidades": [
+    {
+      "professorId": "doc-1",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "doc-1",
+      "turnoId": "tarde",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-1",
+      "turnoId": "tarde",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-1",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 2
+    },
+    {
+      "professorId": "doc-2",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-2",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-2",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-2",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 3,
+      "status": 2
+    },
+    {
+      "professorId": "doc-3",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-3",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "doc-3",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "doc-3",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 2
+    },
+    {
+      "professorId": "doc-4",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-4",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-4",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "doc-4",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 2
+    },
+    {
+      "professorId": "doc-5",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-5",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-5",
+      "turnoId": "tarde",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-5",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 2
+    },
+    {
+      "professorId": "doc-6",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "doc-6",
+      "turnoId": "tarde",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-6",
+      "turnoId": "tarde",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-6",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 2
+    },
+    {
+      "professorId": "doc-7",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-7",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-7",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-7",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 3,
+      "status": 2
+    },
+    {
+      "professorId": "doc-8",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-8",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-8",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-8",
+      "turnoId": "tarde",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 2
+    },
+    {
+      "professorId": "doc-9",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-9",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-9",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-9",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 5,
+      "status": 2
+    },
+    {
+      "professorId": "doc-10",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-10",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-10",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-10",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 2
+    },
+    {
+      "professorId": "doc-11",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-11",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-11",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-11",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 1,
+      "status": 2
+    },
+    {
+      "professorId": "doc-12",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-12",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "doc-12",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "doc-12",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 2
+    },
+    {
+      "professorId": "doc-13",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-13",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "doc-13",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "doc-13",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 1,
+      "status": 2
+    },
+    {
+      "professorId": "doc-14",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-14",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-14",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-14",
+      "turnoId": "manha",
+      "diaSemana": 3,
+      "tempoNumero": 2,
+      "status": 2
+    },
+    {
+      "professorId": "doc-15",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-15",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-15",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "doc-15",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 2
+    },
+    {
+      "professorId": "doc-16",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-16",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-16",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "doc-16",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 3,
+      "status": 2
+    },
+    {
+      "professorId": "doc-17",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-17",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-17",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-17",
+      "turnoId": "manha",
+      "diaSemana": 3,
+      "tempoNumero": 3,
+      "status": 2
+    },
+    {
+      "professorId": "doc-18",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-18",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-18",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "doc-18",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 2
+    },
+    {
+      "professorId": "doc-19",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-19",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-19",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-19",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 5,
+      "status": 2
+    },
+    {
+      "professorId": "doc-20",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-20",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-20",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-20",
+      "turnoId": "manha",
+      "diaSemana": 3,
+      "tempoNumero": 4,
+      "status": 2
+    },
+    {
+      "professorId": "doc-21",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-21",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-21",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-21",
+      "turnoId": "manha",
+      "diaSemana": 4,
+      "tempoNumero": 5,
+      "status": 2
+    },
+    {
+      "professorId": "doc-22",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-22",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-22",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-22",
+      "turnoId": "manha",
+      "diaSemana": 3,
+      "tempoNumero": 5,
+      "status": 2
+    },
+    {
+      "professorId": "doc-23",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-23",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-23",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-23",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 2
+    },
+    {
+      "professorId": "doc-24",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-24",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-24",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "doc-24",
+      "turnoId": "manha",
+      "diaSemana": 4,
+      "tempoNumero": 3,
+      "status": 2
+    },
+    {
+      "professorId": "doc-25",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "doc-25",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "doc-25",
+      "turnoId": "manha",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "doc-25",
+      "turnoId": "manha",
+      "diaSemana": 2,
+      "tempoNumero": 3,
+      "status": 2
+    }
+  ],
+  "gradeHorario": [],
+  "ultimaModificacao": "2026-01-01T00:00:00.000Z"
+}

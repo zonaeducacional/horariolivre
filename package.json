@@ -1,0 +1,59 @@
+{
+  "name": "horario-livre-desktop",
+  "version": "1.1.0",
+  "description": "Vibe Lab Horário - Aplicativo Desktop FOSS para Geração Automática de Horários Escolares",
+  "main": "dist-electron/main/index.js",
+  "author": "Sérgio <sergio@educacao.local>",
+  "license": "MIT",
+  "homepage": "https://github.com/sergio/horario-livre-desktop",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && tsc -p tsconfig.electron.json",
+    "electron:dev": "tsc -p tsconfig.electron.json && concurrently \"vite\" \"wait-on tcp:5173 && node scripts/start-electron.cjs --dev\"",
+    "start": "node scripts/start-electron.cjs",
+    "dist": "npm run build && electron-builder",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "dist:win": "npm run build && electron-builder --win",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.electron.json",
+    "test": "tsc -p tsconfig.electron.json && node --test tests/*.test.cjs",
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters -p tsconfig.json && tsc --noEmit --noUnusedLocals --noUnusedParameters -p tsconfig.electron.json",
+    "dist:dir": "npm run build && electron-builder --dir",
+    "test:e2e": "npm run build && node --test tests/desktop.e2e.cjs"
+  },
+  "dependencies": {
+    "jspdf": "4.2.1",
+    "jspdf-autotable": "5.0.9",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "electron": "45.3.0",
+    "electron-builder": "26.18.0",
+    "playwright": "1.65.0",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "6.4.6",
+    "wait-on": "^8.0.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "overrides": {
+    "app-builder-lib": {
+      "minimatch": "11.0.1"
+    },
+    "@electron/universal": {
+      "minimatch": "11.0.1"
+    }
+  }
+}

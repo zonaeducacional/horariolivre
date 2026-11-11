@@ -1,0 +1,422 @@
+[
+  {
+    "variant": "after",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 328.16780300000005,
+    "cpuMs": 514.031,
+    "maxRssMiB": 92.359375,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 261,
+      "domains": 4455,
+      "backtracks": 175,
+      "prunes": 90,
+      "candidateSlots": 95757,
+      "accepted": 77286,
+      "setupMs": 3,
+      "searchMs": 320,
+      "firstSolutionMs": 327
+    }
+  },
+  {
+    "variant": "after",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 4338.231278,
+    "cpuMs": 4972.205,
+    "maxRssMiB": 167.6328125,
+    "status": "sucesso",
+    "aulas": 300,
+    "oracle": {
+      "valid": true,
+      "aulas": 300,
+      "esperadas": 300,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1536,
+      "domains": 75226,
+      "backtracks": 1331,
+      "prunes": 615,
+      "candidateSlots": 1664338,
+      "accepted": 1368931,
+      "setupMs": 4,
+      "searchMs": 4323,
+      "firstSolutionMs": 4334
+    }
+  },
+  {
+    "variant": "after",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 8574.338505000002,
+    "cpuMs": 9443.759,
+    "maxRssMiB": 195.87109375,
+    "status": "sucesso",
+    "aulas": 600,
+    "oracle": {
+      "valid": true,
+      "aulas": 600,
+      "esperadas": 600,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1027,
+      "domains": 121514,
+      "backtracks": 618,
+      "prunes": 286,
+      "candidateSlots": 2671955,
+      "accepted": 2221146,
+      "setupMs": 4,
+      "searchMs": 8551,
+      "firstSolutionMs": 8567
+    }
+  },
+  {
+    "variant": "after",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 265.489459,
+    "cpuMs": 439.792,
+    "maxRssMiB": 88.87890625,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 261,
+      "domains": 4455,
+      "backtracks": 175,
+      "prunes": 90,
+      "candidateSlots": 95757,
+      "accepted": 77286,
+      "setupMs": 1,
+      "searchMs": 260,
+      "firstSolutionMs": 264
+    }
+  },
+  {
+    "variant": "after",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 4044.14393,
+    "cpuMs": 4610.732,
+    "maxRssMiB": 174.98828125,
+    "status": "sucesso",
+    "aulas": 300,
+    "oracle": {
+      "valid": true,
+      "aulas": 300,
+      "esperadas": 300,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1536,
+      "domains": 75226,
+      "backtracks": 1331,
+      "prunes": 615,
+      "candidateSlots": 1664338,
+      "accepted": 1368931,
+      "setupMs": 5,
+      "searchMs": 4028,
+      "firstSolutionMs": 4041
+    }
+  },
+  {
+    "variant": "after",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 8971.40941,
+    "cpuMs": 9893.419,
+    "maxRssMiB": 200.46484375,
+    "status": "sucesso",
+    "aulas": 600,
+    "oracle": {
+      "valid": true,
+      "aulas": 600,
+      "esperadas": 600,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1027,
+      "domains": 121514,
+      "backtracks": 618,
+      "prunes": 286,
+      "candidateSlots": 2671955,
+      "accepted": 2221146,
+      "setupMs": 5,
+      "searchMs": 8950,
+      "firstSolutionMs": 8966
+    }
+  },
+  {
+    "variant": "after",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 268.690728,
+    "cpuMs": 427.049,
+    "maxRssMiB": 88.703125,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 261,
+      "domains": 4455,
+      "backtracks": 175,
+      "prunes": 90,
+      "candidateSlots": 95757,
+      "accepted": 77286,
+      "setupMs": 2,
+      "searchMs": 262,
+      "firstSolutionMs": 267
+    }
+  },
+  {
+    "variant": "after",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 4088.299018,
+    "cpuMs": 4707.255,
+    "maxRssMiB": 188.515625,
+    "status": "sucesso",
+    "aulas": 300,
+    "oracle": {
+      "valid": true,
+      "aulas": 300,
+      "esperadas": 300,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1536,
+      "domains": 75226,
+      "backtracks": 1331,
+      "prunes": 615,
+      "candidateSlots": 1664338,
+      "accepted": 1368931,
+      "setupMs": 3,
+      "searchMs": 4075,
+      "firstSolutionMs": 4085
+    }
+  },
+  {
+    "variant": "after",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 8140.84854,
+    "cpuMs": 8964.689,
+    "maxRssMiB": 199.15234375,
+    "status": "sucesso",
+    "aulas": 600,
+    "oracle": {
+      "valid": true,
+      "aulas": 600,
+      "esperadas": 600,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1027,
+      "domains": 121514,
+      "backtracks": 618,
+      "prunes": 286,
+      "candidateSlots": 2671955,
+      "accepted": 2221146,
+      "setupMs": 4,
+      "searchMs": 8121,
+      "firstSolutionMs": 8136
+    }
+  },
+  {
+    "variant": "after",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 264.123488,
+    "cpuMs": 424.624,
+    "maxRssMiB": 91.203125,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 261,
+      "domains": 4455,
+      "backtracks": 175,
+      "prunes": 90,
+      "candidateSlots": 95757,
+      "accepted": 77286,
+      "setupMs": 1,
+      "searchMs": 257,
+      "firstSolutionMs": 263
+    }
+  },
+  {
+    "variant": "after",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 3990.0471340000004,
+    "cpuMs": 4585.442,
+    "maxRssMiB": 191.34765625,
+    "status": "sucesso",
+    "aulas": 300,
+    "oracle": {
+      "valid": true,
+      "aulas": 300,
+      "esperadas": 300,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1536,
+      "domains": 75226,
+      "backtracks": 1331,
+      "prunes": 615,
+      "candidateSlots": 1664338,
+      "accepted": 1368931,
+      "setupMs": 3,
+      "searchMs": 3977,
+      "firstSolutionMs": 3987
+    }
+  },
+  {
+    "variant": "after",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 8089.585307,
+    "cpuMs": 8966.72,
+    "maxRssMiB": 206.703125,
+    "status": "sucesso",
+    "aulas": 600,
+    "oracle": {
+      "valid": true,
+      "aulas": 600,
+      "esperadas": 600,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1027,
+      "domains": 121514,
+      "backtracks": 618,
+      "prunes": 286,
+      "candidateSlots": 2671955,
+      "accepted": 2221146,
+      "setupMs": 4,
+      "searchMs": 8070,
+      "firstSolutionMs": 8085
+    }
+  },
+  {
+    "variant": "after",
+    "size": "pequena",
+    "node": "v22.23.3",
+    "fixtureSha256": "bd6a39fc8029c6ad8a99dd523388705b4342f25ef03258dbf0e2c45aa8a747d1",
+    "elapsedMs": 272.78364600000003,
+    "cpuMs": 438.692,
+    "maxRssMiB": 81.19921875,
+    "status": "sucesso",
+    "aulas": 125,
+    "oracle": {
+      "valid": true,
+      "aulas": 125,
+      "esperadas": 125,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 261,
+      "domains": 4455,
+      "backtracks": 175,
+      "prunes": 90,
+      "candidateSlots": 95757,
+      "accepted": 77286,
+      "setupMs": 2,
+      "searchMs": 266,
+      "firstSolutionMs": 271
+    }
+  },
+  {
+    "variant": "after",
+    "size": "media",
+    "node": "v22.23.3",
+    "fixtureSha256": "70fbf16058cf328d02f1235a861cdedb6b815a85a4b568b430201cf4d579e2a3",
+    "elapsedMs": 4028.760356,
+    "cpuMs": 4647.56,
+    "maxRssMiB": 185.3671875,
+    "status": "sucesso",
+    "aulas": 300,
+    "oracle": {
+      "valid": true,
+      "aulas": 300,
+      "esperadas": 300,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1536,
+      "domains": 75226,
+      "backtracks": 1331,
+      "prunes": 615,
+      "candidateSlots": 1664338,
+      "accepted": 1368931,
+      "setupMs": 3,
+      "searchMs": 4016,
+      "firstSolutionMs": 4026
+    }
+  },
+  {
+    "variant": "after",
+    "size": "grande",
+    "node": "v22.23.3",
+    "fixtureSha256": "9a2fb12f5dd721dee843c6a12b7729a486ededa5e59fe89c755543665ef44615",
+    "elapsedMs": 8105.950455,
+    "cpuMs": 9000.289,
+    "maxRssMiB": 212.80859375,
+    "status": "sucesso",
+    "aulas": 600,
+    "oracle": {
+      "valid": true,
+      "aulas": 600,
+      "esperadas": 600,
+      "errors": []
+    },
+    "diagnostics": {
+      "nodes": 1027,
+      "domains": 121514,
+      "backtracks": 618,
+      "prunes": 286,
+      "candidateSlots": 2671955,
+      "accepted": 2221146,
+      "setupMs": 4,
+      "searchMs": 8084,
+      "firstSolutionMs": 8100
+    }
+  }
+]
