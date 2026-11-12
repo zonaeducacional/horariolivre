@@ -115,3 +115,21 @@ Evidências visuais locais: [quadro Grande](../../artifacts/missao03/grande-quad
 Confirmados os quatro commits da missão e a presença dos PDFs e imagens locais citados. O SHA-256 do AppImage foi recalculado e corresponde ao registrado na seção H. A homologação humana do roteiro continua pendente; não houve merge ou publicação nesta conferência.
 
 Nesta conferência, com Node 22.23.3, `npm run typecheck`, `npm run lint` e `npm test` foram executados novamente: **69/69 testes aprovados**, sem falhas ou testes ignorados. `git diff --check` também passou. Os testes desktop, o empacotamento e os benchmarks não foram repetidos; seus resultados acima correspondem à rodada original da missão.
+
+## L. Diagnóstico do cadastro real — 12/11/2026
+
+O projeto foi recuperado do repositório. A recuperação local do aplicativo continha as mesmas contagens informadas: 8 turmas, 15 docentes e 200 aulas, sem aulas fixas ou indisponibilidades. O resultado original foi reproduzido em 319 ms.
+
+As quatro turmas identificadas como V1 estavam vinculadas ao Matutino, usando as mesmas salas das quatro turmas M1. Cada par exigia 50 aulas em uma sala com capacidade de 25 horários no turno. A impossibilidade era real nesse cadastro. Em uma cópia separada, as quatro V1 foram vinculadas ao Vespertino. Nenhum arquivo original ou recuperação do aplicativo foi alterado.
+
+Após corrigir os turnos, a estratégia inicial de pares consumiu o teto de 30 segundos. Uma busca exploratória com aulas simples encontrou as 200 aulas em 1141 ms, verificadas pelo validador de produção e pelo oráculo independente, sem erros. Isso confirmou também a limitação da primeira fase já registrada na seção I.
+
+Correções no motor: diagnóstico antecipado da capacidade da sala por turno, listando sala, turno e turmas envolvidas; reserva de metade do tempo (até 15 segundos) e de parte dos nós para a busca por aulas simples. O orçamento global de 30 segundos/250000 nós e todas as regras obrigatórias permanecem. Interromper a fase heurística não é tratado como prova de impossibilidade. As preferências de geminação continuam sem garantia de ótimo.
+
+Foram acrescentadas regressões para excesso de carga de sala, reutilização em turnos distintos, compartilhamento compatível com a capacidade e conclusão da busca dentro de um orçamento pequeno. Os dados reais e as grades geradas ficam somente em `artifacts/diagnostico/`, ignorados pelo Git. O resultado `horario-gerado.grade` pode ser aberto pelo menu Arquivo > Abrir do aplicativo.
+
+O AppImage desta revisão substitui somente o artefato local recém-construído; o hash e os testes desktop registrados nas seções anteriores se referem à versão anterior. O AppImage não foi publicado e o cadastro original não foi alterado. As correções de código, testes e este relatório foram preparados para envio ao repositório a pedido do usuário.
+
+Validação final desta revisão: **73/73 testes de módulos/integração aprovados**, incluindo os três cenários homologados. Build de produção, lint e conferência de whitespace aprovados. A suíte desktop não foi repetida nesta revisão. Uma tentativa intermediária de reservar apenas 5 segundos para pares prejudicou os cenários maiores; foi descartada, e o limite final de 15 segundos passou na suíte completa.
+
+No motor final, a cópia com os turnos corrigidos gerou as **200 aulas em 16028 ms**, dentro do teto original, e o oráculo independente retornou zero erros. Evidência local: `artifacts/diagnostico/validacao.json`.

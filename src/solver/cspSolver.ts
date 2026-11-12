@@ -41,6 +41,24 @@ export class TimetableCspSolver {
             if (carga > p.diasLetivos.length * shifts.get(c.turnoId)!.temposCount)
                 return result('impossivel', `Carga da turma ${c.nome} excede a capacidade do turno.`);
         }
+        const salas = new Map<string, typeof p.turmas>();
+        for (const turma of p.turmas) {
+            const sala = (turma.salaPadrao || '').trim().toLocaleLowerCase();
+            if (!sala) continue;
+            const chave = JSON.stringify([sala, turma.turnoId]);
+            salas.set(chave, [...(salas.get(chave) || []), turma]);
+        }
+        const conflitosSalas: string[] = [];
+        for (const turmas of salas.values()) {
+            const turno = shifts.get(turmas[0].turnoId)!;
+            const ids = new Set(turmas.map(t => t.id));
+            const carga = p.matrizCurricular.filter(m => ids.has(m.turmaId)).reduce((sum, m) => sum + m.aulasSemanais, 0);
+            const capacidade = p.diasLetivos.length * turno.temposCount;
+            if (carga > capacidade)
+                conflitosSalas.push(`Sala ${turmas[0].salaPadrao!.trim()}, turno ${turno.nome}: ${carga} aulas para ${capacidade} horários disponíveis. Turmas: ${turmas.map(t => t.nome).join(', ')}. Confira o turno e a sala de cada turma.`);
+        }
+        if (conflitosSalas.length)
+            return result('impossivel', 'A carga das turmas excede a capacidade de uma sala no mesmo turno.', [], conflitosSalas);
         for (const prof of p.professores) {
             const assigned = p.matrizCurricular.filter(m => m.professorId === prof.id);
             const carga = assigned.reduce((sum, m) => sum + m.aulasSemanais, 0);
@@ -61,13 +79,17 @@ export class TimetableCspSolver {
             if (carga > capacity)
                 return result('impossivel', `Professor ${prof.nome}: ${carga} aulas para capacidade máxima de ${capacity}.`);
         }
-        let iterations = 0, limit = false, lastProgress = 0;
+        let iterations = 0, limit = false, lastProgress = 0, pairing = false;
         const isCancelled = () => this.cancelled || !!(this.options.cancelFlag && Atomics.load(this.options.cancelFlag, 0));
         const bounded = () => { if (isCancelled())
             return true; if (iterations >= (this.options.maxIterations ?? 250000) || Date.now() - start >= (this.options.maxTimeMs ?? 30000)) {
             limit = true;
             return true;
-        } return false; };
+        }
+            // Reserve part of the shared budget for the complete singles search.
+            // Stopping this heuristic phase is not proof of impossibility.
+            return pairing && (iterations >= Math.min(25000, Math.ceil((this.options.maxIterations ?? 250000) / 4)) || Date.now() - start >= Math.min(15000, (this.options.maxTimeMs ?? 30000) / 2));
+        };
         const fixedCount = new Map<string, number>();
         for (const a of fixed)
             fixedCount.set(a.matrizItemId, (fixedCount.get(a.matrizItemId) || 0) + 1);
@@ -254,7 +276,9 @@ export class TimetableCspSolver {
             return found ? grid : null;
         };
         try {
+            pairing = true;
             let grade = run(true);
+            pairing = false;
             // Pairing is a preference: exhaust a singles search before declaring impossibility.
             if (!grade && !bounded())
                 grade = run(false);
