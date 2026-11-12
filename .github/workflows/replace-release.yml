@@ -1,0 +1,85 @@
+name: Atualizar binários da release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Release existente que receberá os binários
+        required: true
+        default: v1.1.0
+      source_ref:
+        description: Commit ou branch a compilar
+        required: true
+        default: main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: replace-release-${{ inputs.release_tag }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: linux
+            filename: VibeLab-Horario-1.1.0-Linux-x64.AppImage
+          - os: windows-latest
+            target: win
+            filename: VibeLab-Horario-1.1.0-Windows-x64-portable.exe
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm run lint
+      - name: Empacotar AppImage
+        if: matrix.target == 'linux'
+        run: npx electron-builder --linux AppImage --x64 --publish never -c.artifactName=${{ matrix.filename }}
+      - name: Empacotar portátil Windows
+        if: matrix.target == 'win'
+        run: npx electron-builder --win portable --x64 --publish never -c.artifactName=${{ matrix.filename }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ matrix.target }}
+          path: artifacts/packages/${{ matrix.filename }}
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: read
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: ${{ inputs.release_tag }}
+      SOURCE_REF: ${{ inputs.source_ref }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: release-*
+          merge-multiple: true
+          path: packages
+      - name: Calcular hashes e substituir downloads
+        working-directory: packages
+        run: |
+          sha256sum VibeLab-Horario-1.1.0-Linux-x64.AppImage VibeLab-Horario-1.1.0-Windows-x64-portable.exe > SHA256SUMS.txt
+          gh release view "$RELEASE_TAG"
+          gh release upload "$RELEASE_TAG" VibeLab-Horario-1.1.0-Linux-x64.AppImage VibeLab-Horario-1.1.0-Windows-x64-portable.exe SHA256SUMS.txt --clobber
+          echo "Binários compilados de $SOURCE_REF e publicados em $RELEASE_TAG" >> "$GITHUB_STEP_SUMMARY"
+          cat SHA256SUMS.txt >> "$GITHUB_STEP_SUMMARY"
