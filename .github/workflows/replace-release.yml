@@ -46,10 +46,10 @@ jobs:
       - run: npm run lint
       - name: Empacotar AppImage
         if: matrix.target == 'linux'
-        run: npx electron-builder --linux AppImage --x64 --publish never -c.artifactName=${{ matrix.filename }}
+        run: npx electron-builder --linux AppImage --x64 --publish never "-c.artifactName=${{ matrix.filename }}"
       - name: Empacotar portátil Windows
         if: matrix.target == 'win'
-        run: npx electron-builder --win portable --x64 --publish never -c.artifactName=${{ matrix.filename }}
+        run: npx electron-builder --win portable --x64 --publish never "-c.artifactName=${{ matrix.filename }}"
       - uses: actions/upload-artifact@v4
         with:
           name: release-${{ matrix.target }}
