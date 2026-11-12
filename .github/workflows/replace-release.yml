@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: Release existente que receberá os binários
+        description: Release que receberá os binários (criada se necessário)
         required: true
-        default: v1.1.0
+        default: v1.2.0
       source_ref:
         description: Commit ou branch a compilar
         required: true
@@ -27,10 +27,10 @@ jobs:
         include:
           - os: ubuntu-latest
             target: linux
-            filename: VibeLab-Horario-1.1.0-Linux-x64.AppImage
+            suffix: Linux-x64.AppImage
           - os: windows-latest
             target: win
-            filename: VibeLab-Horario-1.1.0-Windows-x64-portable.exe
+            suffix: Windows-x64-portable.exe
     runs-on: ${{ matrix.os }}
     timeout-minutes: 20
     steps:
@@ -41,19 +41,30 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - name: Definir nome e conferir versão
+        id: meta
+        shell: bash
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          TARGET_SUFFIX: ${{ matrix.suffix }}
+        run: |
+          app_version=$(node -p "require('./package.json').version")
+          test "$RELEASE_TAG" = "v$app_version"
+          echo "filename=VibeLab-Horario-$app_version-$TARGET_SUFFIX" >> "$GITHUB_OUTPUT"
       - run: npm ci
       - run: npm run build
       - run: npm run lint
+      - run: npm test
       - name: Empacotar AppImage
         if: matrix.target == 'linux'
-        run: npx electron-builder --linux AppImage --x64 --publish never "-c.artifactName=${{ matrix.filename }}"
+        run: npx electron-builder --linux AppImage --x64 --publish never "-c.artifactName=${{ steps.meta.outputs.filename }}"
       - name: Empacotar portátil Windows
         if: matrix.target == 'win'
-        run: npx electron-builder --win portable --x64 --publish never "-c.artifactName=${{ matrix.filename }}"
+        run: npx electron-builder --win portable --x64 --publish never "-c.artifactName=${{ steps.meta.outputs.filename }}"
       - uses: actions/upload-artifact@v4
         with:
           name: release-${{ matrix.target }}
-          path: artifacts/packages/${{ matrix.filename }}
+          path: artifacts/packages/${{ steps.meta.outputs.filename }}
           if-no-files-found: error
           retention-days: 7
 
@@ -70,6 +81,9 @@ jobs:
       RELEASE_TAG: ${{ inputs.release_tag }}
       SOURCE_REF: ${{ inputs.source_ref }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref }}
       - uses: actions/download-artifact@v4
         with:
           pattern: release-*
@@ -78,8 +92,10 @@ jobs:
       - name: Calcular hashes e substituir downloads
         working-directory: packages
         run: |
-          sha256sum VibeLab-Horario-1.1.0-Linux-x64.AppImage VibeLab-Horario-1.1.0-Windows-x64-portable.exe > SHA256SUMS.txt
-          gh release view "$RELEASE_TAG"
-          gh release upload "$RELEASE_TAG" VibeLab-Horario-1.1.0-Linux-x64.AppImage VibeLab-Horario-1.1.0-Windows-x64-portable.exe SHA256SUMS.txt --clobber
+          sha256sum *.AppImage *.exe > SHA256SUMS.txt
+          if ! gh release view "$RELEASE_TAG"; then
+            gh release create "$RELEASE_TAG" --target "$(git rev-parse HEAD)" --title "Vibe Lab Horário $RELEASE_TAG" --generate-notes
+          fi
+          gh release upload "$RELEASE_TAG" *.AppImage *.exe SHA256SUMS.txt --clobber
           echo "Binários compilados de $SOURCE_REF e publicados em $RELEASE_TAG" >> "$GITHUB_STEP_SUMMARY"
           cat SHA256SUMS.txt >> "$GITHUB_STEP_SUMMARY"

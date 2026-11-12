@@ -1,10 +1,9 @@
 import { parentPort, workerData } from 'worker_threads';
-import { TimetableCspSolver } from './cspSolver';
+import { solveTimetable } from './integerSolver';
 const port = parentPort;
 if (!port) throw new Error('Solver deve executar em worker.');
-const solver = new TimetableCspSolver(workerData.projeto, progress => port.postMessage({ type: 'progress', progress }), {
+void solveTimetable(workerData.projeto, progress => port.postMessage({ type: 'progress', progress }), {
   cancelFlag: new Int32Array(workerData.cancelBuffer),
   maxTimeMs: workerData.maxTimeMs,
   maxIterations: workerData.maxIterations,
-});
-port.postMessage({ type: 'result', result: solver.solve() });
+}).then(result => port.postMessage({ type: 'result', result }));

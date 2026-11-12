@@ -80,7 +80,7 @@ export const GeradorView: React.FC<Props> = ({ projeto, onGradeGerada, onNavigat
     <div className="space-y-6">
       <div className="border-b-2 border-[#7e9a72] pb-4">
         <h2 className="text-3xl font-black text-[#141c12] flex items-center gap-2">
-          <Cpu className="w-8 h-8 text-[#141c12]" /> Motor Gerador de Horários (Solver CSP)
+          <Cpu className="w-8 h-8 text-[#141c12]" /> Gerador de Horários
         </h2>
         <p className="text-[#283824] text-lg font-bold">
           O cálculo ocorre em processo separado e pode ser interrompido. Restrições obrigatórias são verificadas antes de aceitar a grade.
@@ -110,8 +110,8 @@ export const GeradorView: React.FC<Props> = ({ projeto, onGradeGerada, onNavigat
         <div className="max-w-2xl mx-auto space-y-4">
           <h3 className="text-3xl font-black text-[#141c12]">Pronto para Gerar a Grade?</h3>
           <p className="text-[#283824] text-lg font-bold">
-            O algoritmo garantirá: zero choques de professor, respeito integral às indisponibilidades cadastradas e
-            maximização de aulas geminadas.
+            A grade aceita respeitará as indisponibilidades, as cargas e os limites diários cadastrados, sem choques de professor ou sala.
+            Aulas geminadas são uma preferência, sem garantia de maximização.
           </p>
 
           <div className="flex justify-center gap-4 pt-4">

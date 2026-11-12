@@ -1,0 +1,1266 @@
+{
+  "versao": "1.1.0",
+  "nomeEscola": "Cenário de regressão: dias restritos",
+  "anoLetivo": 2026,
+  "diasLetivos": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "turnos": [
+    {
+      "id": "shift0",
+      "nome": "turnos 1",
+      "horaInicio": "07:30",
+      "duracaoAulaMinutos": 50,
+      "temposCount": 5,
+      "intervaloAposTempo": 3,
+      "duracaoIntervaloMinutos": 20
+    },
+    {
+      "id": "shift1",
+      "nome": "turnos 2",
+      "horaInicio": "13:00",
+      "duracaoAulaMinutos": 50,
+      "temposCount": 5,
+      "intervaloAposTempo": 3,
+      "duracaoIntervaloMinutos": 20
+    }
+  ],
+  "turmas": [
+    {
+      "id": "class0",
+      "nome": "turmas 1",
+      "sigla": "T1",
+      "turnoId": "shift0",
+      "corHex": "#3b82f6",
+      "salaPadrao": "02"
+    },
+    {
+      "id": "class1",
+      "nome": "turmas 2",
+      "sigla": "T2",
+      "turnoId": "shift0",
+      "corHex": "#10b981",
+      "salaPadrao": "01"
+    },
+    {
+      "id": "class2",
+      "nome": "turmas 3",
+      "sigla": "T3",
+      "turnoId": "shift0",
+      "corHex": "#f59e0b",
+      "salaPadrao": "03"
+    },
+    {
+      "id": "class3",
+      "nome": "turmas 4",
+      "sigla": "T4",
+      "turnoId": "shift0",
+      "corHex": "#8b5cf6",
+      "salaPadrao": "04"
+    },
+    {
+      "id": "class4",
+      "nome": "turmas 5",
+      "sigla": "T5",
+      "turnoId": "shift1",
+      "salaPadrao": "02",
+      "corHex": "#8b5cf6"
+    },
+    {
+      "id": "class5",
+      "nome": "turmas 6",
+      "sigla": "T6",
+      "turnoId": "shift1",
+      "salaPadrao": "01",
+      "corHex": "#8b5cf6"
+    },
+    {
+      "id": "class6",
+      "nome": "turmas 7",
+      "sigla": "T7",
+      "turnoId": "shift1",
+      "salaPadrao": "03",
+      "corHex": "#8b5cf6"
+    },
+    {
+      "id": "class7",
+      "nome": "turmas 8",
+      "sigla": "T8",
+      "turnoId": "shift1",
+      "salaPadrao": "04",
+      "corHex": "#8b5cf6"
+    }
+  ],
+  "professores": [
+    {
+      "id": "teacher0",
+      "nome": "professores 1",
+      "sigla": "P1",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true,
+      "corHex": "#2563eb"
+    },
+    {
+      "id": "teacher1",
+      "nome": "professores 2",
+      "sigla": "P2",
+      "limiteAulasDia": 10,
+      "evitarJanelas": true,
+      "corHex": "#db2777"
+    },
+    {
+      "id": "teacher2",
+      "nome": "professores 3",
+      "sigla": "P3",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true,
+      "corHex": "#d97706"
+    },
+    {
+      "id": "teacher3",
+      "nome": "professores 4",
+      "sigla": "P4",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true,
+      "corHex": "#059669"
+    },
+    {
+      "id": "teacher4",
+      "nome": "professores 5",
+      "sigla": "P5",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true,
+      "corHex": "#7c3aed"
+    },
+    {
+      "id": "teacher5",
+      "nome": "professores 6",
+      "sigla": "P6",
+      "limiteAulasDia": 10,
+      "evitarJanelas": true,
+      "corHex": "#ea580c"
+    },
+    {
+      "id": "teacher6",
+      "nome": "professores 7",
+      "sigla": "P7",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "teacher7",
+      "nome": "professores 8",
+      "sigla": "P8",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "teacher8",
+      "nome": "professores 9",
+      "sigla": "P9",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "teacher9",
+      "nome": "professores 10",
+      "sigla": "P10",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "teacher10",
+      "nome": "professores 11",
+      "sigla": "P11",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "teacher11",
+      "nome": "professores 12",
+      "sigla": "P12",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    },
+    {
+      "id": "teacher12",
+      "nome": "professores 13",
+      "sigla": "P13",
+      "limiteAulasDia": 5,
+      "evitarJanelas": true
+    }
+  ],
+  "disponibilidades": [
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift0",
+      "diaSemana": 5,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift0",
+      "diaSemana": 5,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift0",
+      "diaSemana": 5,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift0",
+      "diaSemana": 5,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift0",
+      "diaSemana": 5,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift1",
+      "diaSemana": 5,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift1",
+      "diaSemana": 5,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift1",
+      "diaSemana": 5,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift1",
+      "diaSemana": 5,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher1",
+      "turnoId": "shift1",
+      "diaSemana": 5,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 2,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 2,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 2,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 2,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 2,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 3,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 3,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 3,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 3,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift0",
+      "diaSemana": 3,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 1,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 1,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 1,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 1,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 1,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 2,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 2,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 2,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 2,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 2,
+      "tempoNumero": 5,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 3,
+      "tempoNumero": 1,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 3,
+      "tempoNumero": 2,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 3,
+      "tempoNumero": 3,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 3,
+      "tempoNumero": 4,
+      "status": 0
+    },
+    {
+      "professorId": "teacher5",
+      "turnoId": "shift1",
+      "diaSemana": 3,
+      "tempoNumero": 5,
+      "status": 0
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": "subject0",
+      "nome": "disciplinas 1",
+      "sigla": "D1",
+      "corHex": "#2563eb"
+    },
+    {
+      "id": "subject1",
+      "nome": "disciplinas 2",
+      "sigla": "D2",
+      "corHex": "#db2777"
+    },
+    {
+      "id": "subject2",
+      "nome": "disciplinas 3",
+      "sigla": "D3",
+      "corHex": "#d97706"
+    },
+    {
+      "id": "subject3",
+      "nome": "disciplinas 4",
+      "sigla": "D4",
+      "corHex": "#059669"
+    },
+    {
+      "id": "subject4",
+      "nome": "disciplinas 5",
+      "sigla": "D5",
+      "corHex": "#7c3aed"
+    },
+    {
+      "id": "subject5",
+      "nome": "disciplinas 6",
+      "sigla": "D6",
+      "corHex": "#ea580c"
+    },
+    {
+      "id": "subject6",
+      "nome": "disciplinas 7",
+      "sigla": "D7",
+      "corHex": "#db2777"
+    },
+    {
+      "id": "subject7",
+      "nome": "disciplinas 8",
+      "sigla": "D8",
+      "corHex": "#7c3aed"
+    },
+    {
+      "id": "subject8",
+      "nome": "disciplinas 9",
+      "sigla": "D9",
+      "corHex": "#dc2626"
+    },
+    {
+      "id": "subject9",
+      "nome": "disciplinas 10",
+      "sigla": "D10",
+      "corHex": "#2563eb"
+    }
+  ],
+  "matrizCurricular": [
+    {
+      "id": "assignment0",
+      "turmaId": "class0",
+      "disciplinaId": "subject0",
+      "professorId": "teacher10",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment1",
+      "turmaId": "class0",
+      "disciplinaId": "subject1",
+      "professorId": "teacher11",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment2",
+      "turmaId": "class0",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "assignment3",
+      "turmaId": "class0",
+      "disciplinaId": "subject3",
+      "professorId": "teacher3",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment4",
+      "turmaId": "class0",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": false,
+      "maximoAulasDia": 1
+    },
+    {
+      "id": "assignment5",
+      "turmaId": "class0",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment6",
+      "turmaId": "class0",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment7",
+      "turmaId": "class0",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment8",
+      "turmaId": "class0",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment9",
+      "turmaId": "class0",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment10",
+      "turmaId": "class1",
+      "disciplinaId": "subject0",
+      "professorId": "teacher10",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment11",
+      "turmaId": "class1",
+      "disciplinaId": "subject1",
+      "professorId": "teacher11",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment12",
+      "turmaId": "class1",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment13",
+      "turmaId": "class1",
+      "disciplinaId": "subject3",
+      "professorId": "teacher3",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment14",
+      "turmaId": "class1",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment15",
+      "turmaId": "class1",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment16",
+      "turmaId": "class1",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment17",
+      "turmaId": "class1",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment18",
+      "turmaId": "class1",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment19",
+      "turmaId": "class1",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment20",
+      "turmaId": "class2",
+      "disciplinaId": "subject0",
+      "professorId": "teacher0",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment21",
+      "turmaId": "class2",
+      "disciplinaId": "subject1",
+      "professorId": "teacher7",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment22",
+      "turmaId": "class2",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment23",
+      "turmaId": "class2",
+      "disciplinaId": "subject3",
+      "professorId": "teacher10",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment24",
+      "turmaId": "class2",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment25",
+      "turmaId": "class2",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment26",
+      "turmaId": "class2",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment27",
+      "turmaId": "class2",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment28",
+      "turmaId": "class2",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment29",
+      "turmaId": "class2",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment30",
+      "turmaId": "class3",
+      "disciplinaId": "subject0",
+      "professorId": "teacher0",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment31",
+      "turmaId": "class3",
+      "disciplinaId": "subject1",
+      "professorId": "teacher1",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment32",
+      "turmaId": "class3",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment33",
+      "turmaId": "class3",
+      "disciplinaId": "subject3",
+      "professorId": "teacher10",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment34",
+      "turmaId": "class3",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment35",
+      "turmaId": "class3",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment36",
+      "turmaId": "class3",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment37",
+      "turmaId": "class3",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment38",
+      "turmaId": "class3",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment39",
+      "turmaId": "class3",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment40",
+      "turmaId": "class4",
+      "disciplinaId": "subject0",
+      "professorId": "teacher10",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment41",
+      "turmaId": "class4",
+      "disciplinaId": "subject1",
+      "professorId": "teacher11",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment42",
+      "turmaId": "class4",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment43",
+      "turmaId": "class4",
+      "disciplinaId": "subject3",
+      "professorId": "teacher3",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment44",
+      "turmaId": "class4",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment45",
+      "turmaId": "class4",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment46",
+      "turmaId": "class4",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment47",
+      "turmaId": "class4",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment48",
+      "turmaId": "class4",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment49",
+      "turmaId": "class4",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment50",
+      "turmaId": "class5",
+      "disciplinaId": "subject0",
+      "professorId": "teacher10",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment51",
+      "turmaId": "class5",
+      "disciplinaId": "subject1",
+      "professorId": "teacher11",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment52",
+      "turmaId": "class5",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment53",
+      "turmaId": "class5",
+      "disciplinaId": "subject3",
+      "professorId": "teacher3",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment54",
+      "turmaId": "class5",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment55",
+      "turmaId": "class5",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment56",
+      "turmaId": "class5",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment57",
+      "turmaId": "class5",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment58",
+      "turmaId": "class5",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment59",
+      "turmaId": "class5",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment60",
+      "turmaId": "class6",
+      "disciplinaId": "subject0",
+      "professorId": "teacher0",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment61",
+      "turmaId": "class6",
+      "disciplinaId": "subject1",
+      "professorId": "teacher7",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment62",
+      "turmaId": "class6",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment63",
+      "turmaId": "class6",
+      "disciplinaId": "subject3",
+      "professorId": "teacher10",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment64",
+      "turmaId": "class6",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment65",
+      "turmaId": "class6",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment66",
+      "turmaId": "class6",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment67",
+      "turmaId": "class6",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment68",
+      "turmaId": "class6",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment69",
+      "turmaId": "class6",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment70",
+      "turmaId": "class7",
+      "disciplinaId": "subject0",
+      "professorId": "teacher0",
+      "aulasSemanais": 4,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment71",
+      "turmaId": "class7",
+      "disciplinaId": "subject1",
+      "professorId": "teacher1",
+      "aulasSemanais": 5,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment72",
+      "turmaId": "class7",
+      "disciplinaId": "subject2",
+      "professorId": "teacher2",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment73",
+      "turmaId": "class7",
+      "disciplinaId": "subject3",
+      "professorId": "teacher9",
+      "aulasSemanais": 3,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment74",
+      "turmaId": "class7",
+      "disciplinaId": "subject4",
+      "professorId": "teacher4",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment75",
+      "turmaId": "class7",
+      "disciplinaId": "subject5",
+      "professorId": "teacher5",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment76",
+      "turmaId": "class7",
+      "disciplinaId": "subject6",
+      "professorId": "teacher6",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment77",
+      "turmaId": "class7",
+      "disciplinaId": "subject7",
+      "professorId": "teacher8",
+      "aulasSemanais": 1,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment78",
+      "turmaId": "class7",
+      "disciplinaId": "subject8",
+      "professorId": "teacher1",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    },
+    {
+      "id": "assignment79",
+      "turmaId": "class7",
+      "disciplinaId": "subject9",
+      "professorId": "teacher12",
+      "aulasSemanais": 2,
+      "permiteGeminada": true,
+      "maximoAulasDia": 2
+    }
+  ],
+  "gradeHorario": [],
+  "ultimaModificacao": "2026-01-01T00:00:00.000Z",
+  "gradeDesatualizada": false
+}

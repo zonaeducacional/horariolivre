@@ -52,9 +52,8 @@ test('reabertura oferece recuperação e preserva arquivo original',async()=>{
  await page.getByRole('dialog',{name:'Recuperação local disponível'}).waitFor();await page.getByRole('button',{name:'Restaurar cópia',exact:true}).click();assert.equal(await page.getByPlaceholder('Nome da Escola').inputValue(),'Trabalho não salvo');assert.equal(JSON.parse(fs.readFileSync(path.join(dir,'school.grade'),'utf8')).nomeEscola,'Escola alterada no teste');
 });
 test('botão interromper encerra cálculo sem apagar aulas existentes',async()=>{
- const {project,lesson}=require('./fixtures.cjs');const p=project(5);p.turmas=[];p.professores=[];p.matrizCurricular=[];
- for(let i=0;i<6;i++){p.turmas.push({id:'c'+i,nome:'Turma '+i,sigla:'T'+i,turnoId:'t',salaPadrao:'Sala compartilhada'});p.professores.push({id:'p'+i,nome:'Docente '+i,sigla:'P'+i,limiteAulasDia:5,evitarJanelas:false});p.matrizCurricular.push({id:'m'+i,turmaId:'c'+i,professorId:'p'+i,disciplinaId:'d',aulasSemanais:5,permiteGeminada:false,maximoAulasDia:1});}
- p.gradeHorario=[lesson({matrizItemId:'m0',turmaId:'c0',professorId:'p0'})];const file=path.join(dir,'cancelamento.grade');fs.writeFileSync(file,JSON.stringify(p));await app.evaluate(({dialog},file)=>{dialog.showOpenDialog=async()=>({canceled:false,filePaths:[file]});},file);
+ const {lesson}=require('./fixtures.cjs');const p=structuredClone(require('./fixtures/homologacao/grande.json'));
+ const m=p.matrizCurricular[0];p.gradeHorario=[lesson({matrizItemId:m.id,turmaId:m.turmaId,professorId:m.professorId,disciplinaId:m.disciplinaId})];const file=path.join(dir,'cancelamento.grade');fs.writeFileSync(file,JSON.stringify(p));await app.evaluate(({dialog},file)=>{dialog.showOpenDialog=async()=>({canceled:false,filePaths:[file]});},file);
  await page.getByRole('button',{name:'Abrir...',exact:true}).click();await page.getByRole('button',{name:'Descartar e continuar',exact:true}).click();await page.getByRole('region',{name:'Avisos do projeto'}).waitFor();
  await page.getByRole('button',{name:'Gerar Horário (Cálculo)',exact:true}).click();await page.getByRole('button',{name:'Gerar Horário Escolar',exact:true}).click();await page.getByRole('button',{name:'Interromper Cálculo',exact:true}).click();await page.getByText('Cálculo interrompido',{exact:true}).waitFor();
  assert.deepEqual(JSON.parse(fs.readFileSync(file,'utf8')).gradeHorario,p.gradeHorario);assert.equal(await page.getByRole('button',{name:'Gerar Horário Escolar',exact:true}).isEnabled(),true);assert.deepEqual(errors,[]);
@@ -104,4 +103,19 @@ test('Electron gera os três cenários e exporta quadro geral legível',async()=
   assert.equal(await app.evaluate(()=>globalThis.pendingPdf),'completed');assert.ok(fs.readFileSync(pdf,'latin1').startsWith('%PDF-'));
  }
  fs.writeFileSync(path.resolve('artifacts/missao03/desktop-scenarios.json'),JSON.stringify(metrics,null,2));assert.deepEqual(errors,[]);
+});
+
+test('desktop offline gera dias restritos usando o motor incluído no pacote',async()=>{
+ const fixture=path.resolve('tests/fixtures/homologacao/dias-restritos.json');
+ await app.evaluate(({dialog},file)=>{dialog.showOpenDialog=async()=>({canceled:false,filePaths:[file]});},fixture);
+ await page.getByRole('button',{name:'Abrir...',exact:true}).click();
+ const discard=page.getByRole('button',{name:'Descartar e continuar',exact:true});if(await discard.isVisible())await discard.click();
+ await page.getByRole('button',{name:'Gerar Horário (Cálculo)',exact:true}).click();
+ await page.getByRole('button',{name:'Gerar Horário Escolar',exact:true}).click();
+ await page.getByText('Grade Gerada com Sucesso!',{exact:true}).waitFor({timeout:35000});
+ const output=path.join(dir,'dias-restritos.grade');await app.evaluate(({dialog},file)=>{dialog.showSaveDialog=async()=>({canceled:false,filePath:file});},output);
+ await page.keyboard.press('Control+Shift+s');await page.waitForFunction(()=>!document.body.innerText.includes('Alterações não salvas'));
+ const generated=JSON.parse(fs.readFileSync(output));assert.deepEqual(require('./helpers/oraculo.cjs').validate(generated).errors,[]);
+ assert.equal(generated.gradeHorario.length,200);assert.equal(generated.gradeHorario.some(a=>a.professorId==='teacher1'&&a.diaSemana===5),false);
+ assert.equal(generated.gradeHorario.some(a=>a.professorId==='teacher5'&&[1,2,3].includes(a.diaSemana)),false);assert.deepEqual(errors,[]);
 });

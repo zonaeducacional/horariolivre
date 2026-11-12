@@ -1,11 +1,11 @@
 {
   "name": "horario-livre-desktop",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Vibe Lab Horário - Aplicativo Desktop FOSS para Geração Automática de Horários Escolares",
   "main": "dist-electron/main/index.js",
   "author": "Sérgio <sergio@educacao.local>",
   "license": "MIT",
-  "homepage": "https://github.com/sergio/horario-livre-desktop",
+  "homepage": "https://github.com/zonaeducacional/horariolivre",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -22,6 +22,7 @@
     "test:e2e": "npm run build && node --test tests/desktop.e2e.cjs"
   },
   "dependencies": {
+    "highs": "1.15.4",
     "jspdf": "4.2.1",
     "jspdf-autotable": "5.0.9",
     "lucide-react": "^0.475.0",
